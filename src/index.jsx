@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 /*
 
 
@@ -38,4 +38,5 @@ const element = (
 	</div>
 );
 const container = document.getElementById("root");
-ReactDOM.render(element, container);
+const root = createRoot(container);
+root.render(element);
